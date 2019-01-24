@@ -1,0 +1,129 @@
+
+Desing and Process :  Following a sequential method to produce a cloud solution
+architecture that is practical and stable
+	Defining the service:
+		State and Solution:
+			- Stateful versus stateless
+			- Where is truth in a system?
+			- How should you deal with state?
+			- The worst case for state is a hotspot
+			- Stateful servers pushed to lower in the stack
+			- Divide state to reduce the impact of an outage
+			- A general solution for large-scale cloud-based systems
+		Measurement - Defining a service level:
+			Service Level Indicators (SLI):
+						- Measurable by the user - throughput, latency, availability
+			Service Level Objectives (SLO):
+						- How the service should perform - Tolerance
+						- Ideal performance
+						- Creation of alerts
+			Service Level Agreements (SLA):
+						- Binding contract
+						- Grants compensation fron the provider to the users
+			User personas indicators:
+						- Goals and behaviors of a group of users
+		Grather requirements:
+			- Qualitative
+				Why, Who, What, When
+			- Quantitative
+				Time, Data, users
+			- Scaling
+				Expected traffic, growth, hardware resources
+			- Size
+				Dimensions, replication, Rate of change
+
+	Three-tier arquitecture:
+
+		Business logic layer(Compute):
+			- Microservices - https://microservices.io/patterns/microservices.html
+			- GCP 12-factor support - https://12factor.net
+			- Which platform can service speed, reliability, and scale with the least amount of effort?
+			- Compute System Provisioning
+				Vertical
+				Horizontal
+					Segregate services for betther performance and scalabilitty
+			- Desing first dimension later
+			- Systematic logical troubleshooting
+					5 Whys
+			- Collaboration and communication 
+		
+		Data layer(Storage):
+			- Classifying and characterizing data
+				- Data transaction properties required
+					ACID
+					BASE
+				- What are the data consistency requirements?
+			- Data ingest and data migration
+			- Identification of storage needs and mapping to storage systems
+
+		Presentation layer(Networking):
+			Network configuration for data transfer within the service:
+				Location
+				Load Balancing
+				Caching
+			Network integration with other environments:
+				Existing on-premise
+				Multi-cloud
+
+	Design for resiliency, scalability, and disaster recovery:
+		Failure due to loss
+			- Design to avoid SPOFs
+			- Correlated failures
+			- Design to avoid correlated failures(Distribute)
+		Failure due to overload
+			- Failover design for reliability
+			- Design to prevent cascading failure
+			- Design to mitigate incast overload
+			- Detect overload:Early warning systems
+		Coping with failure
+			- Prepare the team using simulation sessions
+			- Incorporate failure into SLOs
+			-  Meetings matter for resiliency
+			- Strategies for dealing with failure
+		Business continuity and disaster recovery (DR)
+			- Cloud DNS
+			- Users care about data integrity
+			- Reliable recovery with lazy deletion
+			- The goal isn't backup or archive, it’s RESTORE
+			- Tiered backup for resiliency
+		Scalable and resilient design
+			- Deploy services in differtens zones
+
+	Design for Security:
+		- Cloud security 
+		- Network access control and firewalls
+		- Protections against denial of service
+		- Resource sharing and isolation
+		-  Data encryption and key management
+		- Identity access and auditing
+
+	Capacity planning and cost optimization:
+		- Forecast
+				Insttance Overhead
+				Persistent Disk
+				Network capacity
+				Workload Estimation
+		- Allocate
+				Alternatives besides increasing resoruces
+		-  Approve
+				Slo Sli for support the recomendations
+		- Deploy
+				Test trafic, load,bottlenecks 
+		-  Optimizin
+				VM Cost
+				Disk Cost
+				Network Cost
+
+	Deployment, monitoring and alerting, and incident response:
+		- Lauch check list
+		- Automat everything
+		- Deployment Manager
+		- Monitoring and alering
+				Push-based
+				Pull-based
+				Stackdriver
+				Dashboards
+		- Incident Response
+				Implement easy buttons
+				Build a playbook
+

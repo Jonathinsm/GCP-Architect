@@ -1,0 +1,106 @@
+¿Sistemas distribuidos? Conjunto de equipos independientes que actuan de forma transperente actuando como un inico equipo.
+
+Descentralizar el almaccentamiento de ifnormación o de comput.
+ 
+Divide y venceras
+
+Cluster
+Master
+Nodos
+Replicas
+
+Mapreduce
+
+*******************************************************************************************
+
+¿Que son datos exturcturados y no extructurados?
+
+Block Storage - Blob/Object Storage(Metadatos)
+
+Cloud Storage
+	Hasta 10 TB
+	Multi-regional - Contenido Web statico de alta disponibilidad
+	Regional - Usar en vms, dataproc, Baja latencia entre regiones
+	Nearline - Backups o logs
+	Coldine - Recuperación de desastres archivo
+
+	No se puede cambiar regional a multiregional directamente.
+
+	Tienen nombres unicos globales
+
+	Puedes transferir información de un bucket a otro. Incluso de otros proveedores con la url. 		(TSV)
+
+	Versionamiento Archivos - ¿Como putas? gsutil versioning set on gs://mi-bucket-tatan
+
+	Ciclos de vida
+
+	Acceso granular
+
+	Canal notificaciones
+	
+	Encriptación con llaves
+
+OLTP y las propiedades  A -Todo ocurre o nada ocurre
+			C - Estado valido al inicio y al final
+			I - Bloque de datos mientras se encuentran en uso
+			D - Durabilidad por fallos
+
+Cloud SQL - Mysql PotsgresQl 
+	Esla verticalmente
+	Otra forma de subir db
+	Crear replica
+	Failover replica
+	External replica
+	Master Externo
+	Conectar por ssl
+	Copias de seguridad automaticas - Ojo
+
+Cloud Spanner - No open source
+	Parecido a Mysql - No expo ni import-
+	Escala horizontalmente - Multiregional
+	Exede mas de 10TB - Muchos queris por segundo - Gmail
+	ACC_ID, BALANCE
+
+NoSQL Databases - Docummentos o filas con pares de valor y llave
+	Acid solo hasta cierto punto - No para muchas OLTP
+
+Datastore - Parecido a MongoDB
+	Totalmente Gestonado
+	Documentos - entities - properties
+	No soportan joins
+	Herarquica - Altamente Extructurada
+	Product catalogs that provide real-time inventory and product details for a retailer.
+	User profiles that deliver a customized experience based on the user’s past activities and preferences.
+	Transactions based on ACID properties, for example, transferring funds from one bank account to another.
+https://community.particle.io/uploads/default/original/2X/b/bd12747a68570b07ec86735d2e464b9279074f49.png
+https://image.slidesharecdn.com/9-150511210602-lva1-app6892/95/9-document-oriented-databases-11-638.jpg?cb=1433608862
+
+Bigtable
+	Hadoop Hbase - Bigdata
+	MapReduce operations
+	Grandes cantidades de datos < 10TB - Petabytes - Baja latencia - Alto volumen de escritura
+	No tan extructurada
+	Cluster - Nodos definen la cantidad de operaciones por segundo
+	Ejemplo 30 nodos - 300 Mbt/s - 25 Tb al dia - 9 petabites en un año
+	Acid a nivel de filas
+	Scannear grandes cantidades de información.
+	Puedes crear una instancia de desarrollo que es mas barata que la de producción.
+
+		Time-series data, such as CPU and memory usage over time for multiple servers.
+		Marketing data, such as purchase histories and customer preferences.
+		Financial data, such as transaction histories, stock prices, and currency exchange rates.
+		Internet of Things data, such as usage reports from energy meters and home appliances.
+		Graph data, such as information about how users are connected to one another.
+
+BigQuery - Analityc database
+	Solo  almacenar información ideal para terabytes y petabytes
+	No esta heco para escritura de datos
+	No cobran por mover data solo porel almacenamiento y la consulta - 1TB/MES es gratis
+	
+Redis - Alto rendimiento
+	Ram en disco
+
+https://cloud.google.com/storage-options/
+
+Page 220
+

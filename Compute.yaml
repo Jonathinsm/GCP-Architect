@@ -1,0 +1,104 @@
+GCE: Fastly Migration to thecloud on premises infraextrucutre
+	Preemtible instances:
+		- Limitations
+		- No sla
+		- Not free tier
+		- Can ise in administrate instances
+
+	Machine Types:
+		- standard
+		- higtmem
+		- highcpu
+		- f1-micro-g1-small
+		- ultramem-megamem
+
+	Plataformas de CPU
+	Gpus -Donde puedo tenerlas?
+	Grupos de instancias:
+		- Managed:
+			Zonal
+			Regional
+			Connecttion draining
+			Health Cheking
+			Autoscaling
+		- Unmmanaged:
+			Dissiminar instances
+	Images:
+		Public
+		Custom
+			- Import
+			- Create from public
+			- Copy
+	Storage Options:
+		Zonal
+			Standar persistent disk
+			SSD persisten Disk
+		Reional
+			Standar persistent disk
+			SSD persisten Disk
+		Local SSD
+		Clud storage buckets
+		RAM Disk
+
+	Template VM:
+		Automation
+		yaml-jinja2-python
+
+GkE: - Borg Based - Container Orquestation - Container Workloads
+	- Master - Api
+	- Cluster
+	- Nodes - (Demonio - Kubelet) �Que pasa si un nodo muere?
+	- Deployment
+	- Pods
+	- Services
+	- Vms cant update resoruces
+
+App Engine: - Portador de contenedores - Focus to code
+	Components:
+		Dasboard
+		Services
+		Versions
+		Instances
+		Firewall
+		Cron
+		Quotas
+		Blobstore
+		Memcache
+		Settings
+	Standard: - gcloud app deploy app.yaml
+		- Go(1.9-1.11)
+		- Java(7,8)
+		- Nodejs (8-10)
+		- PHP (5.5-7,2)
+		- Python(2.7-3.7)
+
+	Flexible: - 
+		- Cualquier lenguaje
+		- Contenedor
+		- Dockerfile
+		- Controlar Algunos recursos de red
+		- Cuidado XD - Con tu codigo	
+			Cloud DNS: -Balanceo de Carga HTTPS - App Engine
+
+Cloud Functions:
+	- Serverless execution environment for building and connecting cloud services
+	- Microservices
+	- Can store tmp files
+		Runtimes:
+			Nodejs
+			Python
+			Go
+		Event Triggers: 
+			- http
+			- Pub/sub
+			- Cloud Storage
+			- Firebase(All functions)
+			- Strackdriver Logging
+		Use cases:
+			Data processing / ETL
+			Webhooks
+			Lighwight APIS
+			Mobile backend
+			Iot
+		
+		

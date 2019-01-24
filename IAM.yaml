@@ -1,0 +1,27 @@
+https://drive.google.com/file/d/1rtzZ2MzV4TePKdSNFWr2xzkoIFUU_9Yr/view?usp=sharing
+
+Gerarquia de recursos:
+	- Organization
+	- Folders
+	- Projects
+	- https://cloud.google.com/iam/img/policy-hierarchy.png
+
+Proyectos:
+	- Los recuros penden de los proyectos.
+	- Id proyecto
+	- Nombre Mutable
+	- Numero de proyecto
+
+Politica:
+	- Permisos
+
+	- Cuenta Google
+	- Cuenta de servicio
+	- Grupos de Google
+	- Dominio de G suite
+	- Dominio de cloud identity
+
+	Roles:
+		- Primitivos - Owner - Editor - Viewer - Billing Administrator
+		- Predefined roles - Acces to specific resources with customs access
+		- Custom Roles

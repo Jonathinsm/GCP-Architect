@@ -1,0 +1,92 @@
+Vpc :
+https://2.bp.blogspot.com/-J5Rtu3UWlLc/WyKx2k77kgI/AAAAAAAAF30/qyT_LFgQiI8y5TbRYYxsOkuRcIi_v6ItwCLcBGAs/s1600/gcp-partner-interconnect.gif
+	Red: Es global
+	Subred: Es regional
+	Vpc: max 5
+	Vm limit: Per network 7000
+	Auto VPC: Can be convertet to custom but is not reversible.
+
+	Custom VPC: 
+
+	Firewall rules:
+		Default:
+			- default-allow-internal		
+			- default-allow-ssh		
+			- default-allow-rdp		
+			- default-allow-icmp
+
+	VPC peering: Redes -Es parecdido a una VPN pero la conexi�n se hace de forma directa entre proyectos y la encripci�n a nivel de red.
+	Shared VPC: Sub redes - Solo organizaciones.
+
+	Hibrid Conexion:
+		VPN:
+		Interconect:
+				Direct Peering
+				https://cloud.google.com/interconnect/images/single-interconnect.svg
+				https://cloud.google.com/interconnect/docs/concepts/colocation-facilities
+
+				Dedicated
+				https://cloud.google.com/interconnect/images/partner-interconnect-intro.svg
+				https://cloud.google.com/interconnect/docs/concepts/service-providers
+		Cloud Router:
+
+	Recomendaciones: 
+		- Usar VPC Custom
+		- User ips internas
+		- Tener VMS en diferentes regions a nivel de red.
+		- User diferrentes segmentos de red para separar ambientes.
+
+
+Load Balancing:
+	- Balanceador con proxy o sin proxy - Enrrutamiento inteligente
+	- Connecttion draining
+
+	Globales:
+
+		HTTP/S:
+			- Puerto 80 or 8080
+			- https://cloud.google.com/load-balancing/images/basic-http-load-balancer.svg
+			- Mapeos de url example.com/videos - example.com/audio
+			- Cloud CND - Entrega de contenido statico a nodos en toda la red de google (GCC)- Cache que se descarga segun la ubicaci�n del usuario - Hasta 5TB de cache.
+			
+		SSL Proxy:
+			- 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995
+			- https://cloud.google.com/load-balancing/images/ssl-lb-overview.svg
+			- Websockets and IMAP over SSL
+		
+
+		Tcp Proxy:
+			- 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 99
+			- https://cloud.google.com/load-balancing/images/tcp-lb-overview.svg
+		  - Balanceo global con una IP  - Solo premium tier - De lo contrario es regional
+		
+	Regionales:
+
+		Network:
+			-	Directamentede internet a VMS
+			- Reglas de redirección
+			- Ip puerto y protocolo
+			- https://cloud.google.com/solutions/images/ilb-haproxy-network-lb-diagram.png
+			
+		Internal:
+			- Entre VMS internas.
+			- https://cloud.google.com/load-balancing/images/ilb-3-tier-web-app.svg
+
+
+Logging:
+	Logs Entry:
+		- Tags
+		- Payload
+		- Timestamp
+		- Severity
+		- labels
+Monitoreo:
+Deployment Manager: Despliegue de VMS mediante plantillas - IaaC
+Container Registry: Almacenar Y versionar Dockers
+Repositorio de codigo: Git
+Endpoints: Proteccion de acceso y supervision de Apis
+	- Proxy basado en Nginx
+Cloud IOT: Registrar dispositivos, ingerir datos, administrarlos 
+	- https://cloud.google.com/solutions/iot/images/benefits-diagram.png?hl=es
+
+	

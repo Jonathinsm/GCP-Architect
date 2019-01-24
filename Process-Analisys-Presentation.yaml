@@ -1,0 +1,85 @@
+Tipos de computación:
+
+Computación concurrente: Lo de siempre
+
+In distributed computing:Cada procesador Tiene su propia memoria, e intercambian infromación por colas de mensajes.
+Ventajas:Concurrencia
+
+In parallel computing: Procesadores interactuan atravez de una memoria compartida.
+Ventajas: Menor latencai - Real time
+
+Python
+**************************************
+
+Bigdata: 
+	Variedad Datos no extructurados, texto, audio, video, imagenes
+	Volumen sensores,flujos de clics, tweets
+	Veloccidad  se transmiten directo a la memoria, tiempo real,
+
+Large dataset: Información en memoria que procesan las aplicaciones
+
+Hadoop(Open Source): Framework procesamiento distribuido de grandes cantidades de datos.
+	MapReduce
+	HDFS
+	
+Dataproc: Es hadoop en cloud
+
+**************************************
+Pipeline: Es un paradigma de arquitectura. Procesar información y los va transformando en flujo de datos.
+
+Apache Beam: Open source
+	Batch an streaming data-parallel procesing pipelines.
+	Transforma datos de entradas en salidas.
+	Construir modelos
+	Jobs
+
+Dataflow: Es apache beam en google cloud
+	Representación grafica del pipeline
+
+****************************************
+Inteligencia artificial: El intento de hacer que una aplicacion sen tan o mas inteligentes que un ser humano.
+
+Machine Learning: Serie de algoritmos que una aplicación sea artificialmente inteligente.
+
+Alan turing:Si al interactuar con una maquina, logras creer que estas interactuando con un ser humano. Eso es inteligencia artificial.
+
+********************************************
+Ciencia de datos (Data Science): Cada año se generan 90% mas de datos.
+	Interpretar la información para el entendimiento humano.
+	Habilidad Visualización de datos.(Lo que no es ovio  para los demas)
+	Muchas fuentes
+	Trata de predecir
+
+Analythics: Analizar fuentes de ifnormación para revlar, tendencias, metricas.
+	Solo extrae un resultado especifico
+	Solo una fuente
+***********************************************
+
+API: Aplicaton Programming Interface
+	Interface de comunicación para obener, enviar o procesar información entre aplicaciones.
+	Esa interfaz o medio es por peticiones http/s
+
+Cloud Machine Learning Engine: TensorFlow, scikit-learn and XGBoost
+	Entrenar Modelos de machine learning con herramientas de google
+	
+Dataprep: Partner Trifacta
+	 Explore and transform raw data from disparate and/or large datasets into clean and structured data for further analysis and processing
+
+Machine learning APIS:
+	Cloud Vision API: Integrates Google Vision features, including image labeling, face, logo, and landmark detection, optical character recognition (OCR), and detection of explicit content, into applications.
+
+	Cloud Speech API: Uses fast and accurate speech recognition to convert audio, either from a microphone or from a file, to text in over 80 languages and variants
+Natural Language API	Analyzes the structure and meaning of text, including sentiment analysis, entity recognition, and text annotations.
+
+	Translation API: Translates text from one language to another.
+
+	Dialogflow API:  An end-to-end development suite for conversational interfaces (e.g., chatbots, voice-powered apps and devices).
+
+*****************************************************
+Datalab: Analisis de información colaborativa
+	Instancia de Compute Engine
+	Solo se puede crear mediante sdk o shell
+	Navegación por web y es parecido a un git
+Dataestudio: Informes
+
+
