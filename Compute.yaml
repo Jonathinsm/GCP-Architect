@@ -1,4 +1,4 @@
-GCE: Fastly Migration to thecloud on premises infraextrucutre
+GCE: Fastly Migration to thecloud on premises infraextrucutre - Lift and shift
 	Preemtible instances:
 		- Limitations
 		- No sla
@@ -36,13 +36,30 @@ GCE: Fastly Migration to thecloud on premises infraextrucutre
 		Reional
 			Standar persistent disk
 			SSD persisten Disk
-		Local SSD
+		Local SSD (Block Storage Linke SAN)
 		Clud storage buckets
 		RAM Disk
-
+		File Servers:
+			Compute Engine persistent disks
+			Single Node File Server
+			Elastifile
+			Quobyte
+			Avere vFXT
 	Template VM:
 		Automation
 		yaml-jinja2-python
+
+	Quotas:
+		Prevent runaway comsuption
+		Prevent billing suprprises
+		Revew resoruses
+
+	Mitration:
+		VMDK, VHD, and RAW
+		Import virtual disk
+		Use Velostrata
+		CloudEndure
+		Supported Operative Systems
 
 GkE: - Borg Based - Container Orquestation - Container Workloads
 	- Master - Api

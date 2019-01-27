@@ -25,3 +25,15 @@ Politica:
 		- Primitivos - Owner - Editor - Viewer - Billing Administrator
 		- Predefined roles - Acces to specific resources with customs access
 		- Custom Roles
+	
+Billing Account:
+	Self-serve
+		Payment instrument like credito or debit card.
+		Chargen automatically
+	Invoiced
+		Ceck o wire transfer
+		Invoices by mail
+
+	Chargin Cicle:
+		Montoy billing
+		Therhoold billing

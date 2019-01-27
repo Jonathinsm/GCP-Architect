@@ -1,14 +1,11 @@
-Tipos de computación:
-
-Computación concurrente: Lo de siempre
-
-In distributed computing:Cada procesador Tiene su propia memoria, e intercambian infromación por colas de mensajes.
+Types of computing:
+	Concurrency computing: Lo de siempre
+	In distributed computing: Cada procesador Tiene su propia memoria, e intercambian infromaciï¿½n por colas de mensajes.
 Ventajas:Concurrencia
+	In parallel computing: Procesadores interactuan atravez de una memoria compartida.
+		- Ventajas: Menor latencai - Real time
 
-In parallel computing: Procesadores interactuan atravez de una memoria compartida.
-Ventajas: Menor latencai - Real time
 
-Python
 **************************************
 
 Bigdata: 
@@ -16,16 +13,52 @@ Bigdata:
 	Volumen sensores,flujos de clics, tweets
 	Veloccidad  se transmiten directo a la memoria, tiempo real,
 
-Large dataset: Información en memoria que procesan las aplicaciones
+Large dataset: Cuantity of information that process in memory
 
 Hadoop(Open Source): Framework procesamiento distribuido de grandes cantidades de datos.
 	MapReduce
 	HDFS
 	
 Dataproc: Es hadoop en cloud
+	Low cost:
+		Fixed price
+		Per-minute billing
+		Custom Vms
+		Preemtible VMS
+	Fast:
+		Cluster provisionning
+		Excecusion
+		Server removal
+	Maintainable:
+		Image Versining
+		Managment fo Apache tools
+	Scale: Manually
+	Support ETL:
+		Spark
+		PySpasrk
+		Spark SQL
+		MapReduce
+		Hive
+		Pig
+	Service itegrations:
+		Cloud storage
+		BigQuery
+		Bigtable
+		Stackdriver
 
+	Connection trough:
+		WebUi
+			Forward port ssh
+			Directly
+		Ssh
+		Socks
 **************************************
-Pipeline: Es un paradigma de arquitectura. Procesar información y los va transformando en flujo de datos.
+Pipeline: Its an arqutecture paradigm. Process the informaton in a data flow.
+	Simple pipeline
+	Multiple transform pipeline
+	Mergue pipeline
+	Multiple imput pipeline
+
 
 Apache Beam: Open source
 	Batch an streaming data-parallel procesing pipelines.
@@ -33,30 +66,45 @@ Apache Beam: Open source
 	Construir modelos
 	Jobs
 
-Dataflow: Es apache beam en google cloud
-	Representación grafica del pipeline
+Dataflow:
+	Graphic representation of pipelines
+	ETL based apache beam SKD
+	Batch
+	Strem
+	Compcets:
+		Pipelines
+		PCollections
+		Transforms
+		I/O soruces and sinks
+	Integrations:
+		Cloud storate
+		pub/sub
+		BigQuery
+		Bigtable
+		Datastore
+
 
 ****************************************
 Inteligencia artificial: El intento de hacer que una aplicacion sen tan o mas inteligentes que un ser humano.
 
-Machine Learning: Serie de algoritmos que una aplicación sea artificialmente inteligente.
+Machine Learning: Serie de algoritmos que una aplicaciï¿½n sea artificialmente inteligente.
 
 Alan turing:Si al interactuar con una maquina, logras creer que estas interactuando con un ser humano. Eso es inteligencia artificial.
 
 ********************************************
-Ciencia de datos (Data Science): Cada año se generan 90% mas de datos.
-	Interpretar la información para el entendimiento humano.
-	Habilidad Visualización de datos.(Lo que no es ovio  para los demas)
+Ciencia de datos (Data Science): Cada aï¿½o se generan 90% mas de datos.
+	Interpretar la informaciï¿½n para el entendimiento humano.
+	Habilidad Visualizaciï¿½n de datos.(Lo que no es ovio  para los demas)
 	Muchas fuentes
 	Trata de predecir
 
-Analythics: Analizar fuentes de ifnormación para revlar, tendencias, metricas.
+Analythics: Analizar fuentes de ifnormaciï¿½n para revlar, tendencias, metricas.
 	Solo extrae un resultado especifico
 	Solo una fuente
 ***********************************************
 
 API: Aplicaton Programming Interface
-	Interface de comunicación para obener, enviar o procesar información entre aplicaciones.
+	Interface de comunicaciï¿½n para obener, enviar o procesar informaciï¿½n entre aplicaciones.
 	Esa interfaz o medio es por peticiones http/s
 
 Cloud Machine Learning Engine: TensorFlow, scikit-learn and XGBoost
@@ -76,10 +124,10 @@ Natural Language API	Analyzes the structure and meaning of text, including senti
 	Dialogflow API:  An end-to-end development suite for conversational interfaces (e.g., chatbots, voice-powered apps and devices).
 
 *****************************************************
-Datalab: Analisis de información colaborativa
+Datalab: Analisis de informaciï¿½n colaborativa
 	Instancia de Compute Engine
 	Solo se puede crear mediante sdk o shell
-	Navegación por web y es parecido a un git
+	Navegaciï¿½n por web y es parecido a un git
 Dataestudio: Informes
 
 

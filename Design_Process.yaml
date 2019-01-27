@@ -37,11 +37,23 @@ architecture that is practical and stable
 		Business logic layer(Compute):
 			- Microservices - https://microservices.io/patterns/microservices.html
 			- GCP 12-factor support - https://12factor.net
+					Codebase
+					Dependencies
+					Config (En vars)						
+					Backing services (App agnostic where are the services)
+					Build, release, run
+					Process (Stateless)
+					Port binding (Use urls)
+					Concurrency (Scaling Horizontal)
+					Disposability (Fast startup/Shutdown)
+					Dev/Pord parity
+					Logs (Just Stream)
+					Admin processes ()
 			- Which platform can service speed, reliability, and scale with the least amount of effort?
 			- Compute System Provisioning
-				Vertical
-				Horizontal
-					Segregate services for betther performance and scalabilitty
+					Vertical
+					Horizontal
+						Segregate services for betther performance and scalabilitty
 			- Desing first dimension later
 			- Systematic logical troubleshooting
 					5 Whys
@@ -108,7 +120,7 @@ architecture that is practical and stable
 		-  Approve
 				Slo Sli for support the recomendations
 		- Deploy
-				Test trafic, load,bottlenecks 
+				Test trafic, load,bottlenecks
 		-  Optimizin
 				VM Cost
 				Disk Cost
@@ -126,4 +138,12 @@ architecture that is practical and stable
 		- Incident Response
 				Implement easy buttons
 				Build a playbook
+		Managing Labels:
+			https://cloud.google.com/resource-manager/docs/creating-managing-labels
 
+Case Of Studys:
+https://jybman.com/2018/03/16/google-professional-cloud-architect-certification-case-study-analysis/
+
+https://cloud.google.com/certification/guides/cloud-architect/casestudy-dress4win-rev2
+https://cloud.google.com/certification/guides/cloud-architect/casestudy-mountkirkgames-rev2
+https://cloud.google.com/certification/guides/cloud-architect/casestudy-terramearth-rev2
