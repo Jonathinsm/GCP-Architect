@@ -111,8 +111,9 @@ Cloud Machine Learning Engine: TensorFlow, scikit-learn and XGBoost
 	Entrenar Modelos de machine learning con herramientas de google
 	
 Dataprep: Partner Trifacta
-	 Explore and transform raw data from disparate and/or large datasets into clean and structured data for further analysis and processing
-
+	Explore and transform raw data from disparate and/or large datasets into clean and structured data for further analysis and processing
+	Visual data exploration, cleaning, and processing
+	
 Machine learning APIS:
 	Cloud Vision API: Integrates Google Vision features, including image labeling, face, logo, and landmark detection, optical character recognition (OCR), and detection of explicit content, into applications.
 

@@ -111,17 +111,17 @@ architecture that is practical and stable
 
 	Capacity planning and cost optimization:
 		- Forecast
-				Insttance Overhead
-				Persistent Disk
+				Instance Overhead estimation
+				Persistent Disk estimation
 				Network capacity
 				Workload Estimation
 		- Allocate
 				Alternatives besides increasing resoruces
-		-  Approve
+		- Approve
 				Slo Sli for support the recomendations
 		- Deploy
 				Test trafic, load,bottlenecks
-		-  Optimizin
+		- Optimizin
 				VM Cost
 				Disk Cost
 				Network Cost
@@ -147,3 +147,6 @@ https://jybman.com/2018/03/16/google-professional-cloud-architect-certification-
 https://cloud.google.com/certification/guides/cloud-architect/casestudy-dress4win-rev2
 https://cloud.google.com/certification/guides/cloud-architect/casestudy-mountkirkgames-rev2
 https://cloud.google.com/certification/guides/cloud-architect/casestudy-terramearth-rev2
+
+Best practices:
+	https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations
